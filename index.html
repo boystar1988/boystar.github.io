@@ -1,238 +1,345 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  
-
-  
-  <title>boystar的技术博客</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="一个程序员的博客">
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>boystar的技术博客</title><meta name="author" content="boystar"><meta name="copyright" content="boystar"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="一个程序员的博客">
 <meta property="og:type" content="website">
 <meta property="og:title" content="boystar的技术博客">
-<meta property="og:url" content="http://example.com/index.html">
+<meta property="og:url" content="https://boystar.cn/index.html">
 <meta property="og:site_name" content="boystar的技术博客">
 <meta property="og:description" content="一个程序员的博客">
-<meta property="og:locale">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://git.boystar.cn/avatars/1?s=287">
 <meta property="article:author" content="boystar">
 <meta name="twitter:card" content="summary">
-  
-    <link rel="alternate" href="/atom.xml" title="boystar的技术博客" type="application/atom+xml">
-  
-  
-    <link rel="icon" href="/favicon.png">
-  
-  
-    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
-  
-  
-<link rel="stylesheet" href="/css/style.css">
+<meta name="twitter:image" content="http://git.boystar.cn/avatars/1?s=287"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://boystar.cn/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    jQuery: 'https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js',
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+    },
+    fancybox: {
+      js: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isanchor: false
+};
 
-<meta name="generator" content="Hexo 5.2.0"></head>
+const saveToLocal = {
+  // ttl 單位是 天
+  set: function setWithExpiry(key, value, ttl) {
+    if (ttl === 0) return
+    const now = new Date()
+    const expiryDay = ttl * 86400000
+    const item = {
+      value: value,
+      expiry: now.getTime() + expiryDay,
+    }
+    localStorage.setItem(key, JSON.stringify(item))
+  },
 
-<body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">boystar的技术博客</a>
-      </h1>
-      
-    </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
-        
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
-        
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
-      </div>
-    </div>
-  </div>
-</header>
-      <div class="outer">
-        <section id="main">
-  
-    <article id="post-测试文章" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2020/11/19/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0/" class="article-date">
-  <time datetime="2020-11-19T06:54:28.000Z" itemprop="datePublished">2020-11-19</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/11/19/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0/">测试文章</a>
-    </h1>
-  
+  get: function getWithExpiry(key) {
+    const itemStr = localStorage.getItem(key)
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2020/11/19/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0/" data-id="ckhohd1a50001pmr719ze2jhl" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
+    if (!itemStr) {
+      return undefined
+    }
+    const item = JSON.parse(itemStr)
+    const now = new Date()
 
+    if (now.getTime() > item.expiry) {
+      localStorage.removeItem(key)
+      return undefined
+    }
+    return item.value
+  }
+}
 
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2020/11/19/hello-world/" class="article-date">
-  <time datetime="2020-11-19T06:50:25.254Z" itemprop="datePublished">2020-11-19</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/11/19/hello-world/">Hello World</a>
-    </h1>
-  
+// https://stackoverflow.com/questions/16839698/jquery-getscript-alternative-in-native-javascript
+const getScript = url => new Promise((resolve, reject) => {
+  const script = document.createElement('script')
+  script.src = url
+  script.async = true
+  script.onerror = reject
+  script.onload = script.onreadystatechange = function() {
+    const loadState = this.readyState
+    if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+    script.onload = script.onreadystatechange = null
+    resolve()
+  }
+  document.head.appendChild(script)
+})</script><script id="config_change">var GLOBAL_CONFIG_SITE = { 
+  isPost: false,
+  isHome: true,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2024-07-11 15:08:05'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(function () {  window.activateDarkMode = function () {
+    document.documentElement.setAttribute('data-theme', 'dark')
+    if (document.querySelector('meta[name="theme-color"]') !== null) {
+      document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+    }
+  }
+  window.activateLightMode = function () {
+    document.documentElement.setAttribute('data-theme', 'light')
+   if (document.querySelector('meta[name="theme-color"]') !== null) {
+      document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+    }
+  }
+  const autoChangeMode = 'false'
+  const t = saveToLocal.get('theme')
+  if (autoChangeMode === '1') {
+    const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+    const isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+    const isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+    const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+    if (t === undefined) {
+      if (isLightMode) activateLightMode()
+      else if (isDarkMode) activateDarkMode()
+      else if (isNotSpecified || hasNoSupport) {
+        const now = new Date()
+        const hour = now.getHours()
+        const isNight = hour <= 6 || hour >= 18
+        isNight ? activateDarkMode() : activateLightMode()
+      }
+      window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
+        if (saveToLocal.get('theme') === undefined) {
+          e.matches ? activateDarkMode() : activateLightMode()
+        }
+      })
+    } else if (t === 'light') activateLightMode()
+    else activateDarkMode()
+  } else if (autoChangeMode === '2') {
+    const now = new Date()
+    const hour = now.getHours()
+    const isNight = hour <= 6 || hour >= 18
+    if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
+    else if (t === 'light') activateLightMode()
+    else activateDarkMode()
+  } else {
+    if (t === 'dark') activateDarkMode()
+    else if (t === 'light') activateLightMode()
+  }const asideStatus = saveToLocal.get('aside-status')
+if (asideStatus !== undefined) {
+   if (asideStatus === 'hide') {
+     document.documentElement.classList.add('hide-aside')
+   } else {
+     document.documentElement.classList.remove('hide-aside')
+   }
+}})()</script><meta name="generator" content="Hexo 5.2.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="author-avatar"><img class="avatar-img" src="http://git.boystar.cn/avatars/1?s=287" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">文章</div><div class="length-num">10</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">标签</div><div class="length-num">7</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div></div></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header" style="background-image: url('/img/macbook.jpeg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">boystar的技术博客</a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="site-info"><h1 id="site-title">boystar的技术博客</h1><div id="site_social_icons"><a class="social-icon" href="https://github.com/boystar1988" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:zb_zhao@msn.cn" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2021/04/27/nginxlog/" title="分析Nginx日志脚本">     <img class="post_bg" src="/../img/nginx.jpeg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="分析Nginx日志脚本"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/04/27/nginxlog/" title="分析Nginx日志脚本">分析Nginx日志脚本</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2021-04-27T03:27:00.000Z" title="发表于 2021-04-27 11:27:00">2021-04-27</time></span></div><div class="content">提取前10分钟的日志1tac /var/logs/nginx/access.log| awk &#x27;BEGIN&#123; &quot;date -d \&quot;-10 minute\&quot; +\&quot;%H:%M:%S\&quot;&quot; | getline min10ago &#125; &#123; if (substr($4, 14) &gt; min10ago) print $0;else exit &#125;&#x27; | tac### 提取前10分钟的日志
+</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2021/04/17/cap/" title="CAP理论">     <img class="post_bg" src="/../img/algorithm.jpeg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="CAP理论"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/04/17/cap/" title="CAP理论">CAP理论</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2021-04-17T14:41:28.000Z" title="发表于 2021-04-17 22:41:28">2021-04-17</time></span></div><div class="content">一、CAP理论根据CAP理论，一个分布式系统不可能同时满足以下三种
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2020/11/19/hello-world/" data-id="ckhohd19x0000pmr7gc0rgx2j" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-
-
-</section>
-        
-          <aside id="sidebar">
-  
-    
-
-  
-    
-
-  
-    
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/11/">November 2020</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2020/11/19/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0/">测试文章</a>
-          </li>
-        
-          <li>
-            <a href="/2020/11/19/hello-world/">Hello World</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-
-  
-</aside>
-        
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      &copy; 2020 boystar<br>
-      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
-    </div>
-  </div>
-</footer>
-    </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
-    
-
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+一致性(C:Consistency)
+可用性(A:Available)
+分区容错性(P:Partition Tolerance)
 
 
-  
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
-
-  
-<script src="/fancybox/jquery.fancybox.pack.js"></script>
+CAP原则的精髓就是要么AP，要么CP，要么AC，但是不存在CAP。如果在某个分布式系统中数据无副本， 那么系统必然满足强一致性条件， 因为只有独一数据，不会出现数据不一致的情况，此时C和P两要素具备，但是如果系统发生了网络分区状况或者宕机，必然导致某些数据不可以访问，此时可用性条件就不能被满足，即在此情况下获得了CP系统，但是CAP不可同时满足
+因此在进行分布式架构设计时，必须做出取舍。以下三种情况：
+CA：不分区的情况下，一致性和可用性可以保证，但是舍弃分区容错性，那就变成单机模式了CP：保证一致性和分区容错性的前提下，意味着需要进行数据同步，这时的可用性无法保障AP：保证可用性和分区容错性的前提下，一旦出现网络波动，数据一致性无法保障
 
 
 
-
-<script src="/js/script.js"></script>
-
-
+模式
+例子
 
 
-  </div>
-</body>
-</html>
+
+CA
+MySQL
+
+
+CP
+Redis，MongoDB
+
+
+AP
+12306，淘宝
+
+
+</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2021/04/17/render/" title="浏览器渲染过程">     <img class="post_bg" src="/../img/browser.jpeg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="浏览器渲染过程"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/04/17/render/" title="浏览器渲染过程">浏览器渲染过程</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2021-04-17T06:50:28.000Z" title="发表于 2021-04-17 14:50:28">2021-04-17</time></span></div><div class="content">一、浏览器渲染
+</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2021/04/17/algorithm/" title="常用算法">     <img class="post_bg" src="/../img/algorithm.jpeg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="常用算法"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/04/17/algorithm/" title="常用算法">常用算法</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2021-04-17T04:08:28.000Z" title="发表于 2021-04-17 12:08:28">2021-04-17</time></span></div><div class="content">一、冒泡排序
+12345678910111213function bubbleSort(arr) &#123;    var len = arr.length;    for(var i = 0; i &lt; len - 1; i++) &#123;        for(var j = 0; j &lt; len - 1 - i; j++) &#123;            if(arr[j] &gt; arr[j+1]) &#123;       // 相邻元素两两对比                var temp = arr[j+1];       // 元素交换                arr[j+1] = arr[j];                arr[j] = temp;            &#125;        &#125;    &#125;    return arr;&#125;
+
+二、快速排序
+1234567891011121314151617181920212223242526272829303132function quickSort ...</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2021/04/17/redis-del/" title="Redis淘汰策略">     <img class="post_bg" src="/../img/redis.jpeg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Redis淘汰策略"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/04/17/redis-del/" title="Redis淘汰策略">Redis淘汰策略</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2021-04-17T03:58:28.000Z" title="发表于 2021-04-17 11:58:28">2021-04-17</time></span></div><div class="content">配置淘汰策略redis.conf
+1maxmemory-policy volatile-lru
+
+8种淘汰策略
+
+
+淘汰策略
+说明
+
+
+
+noeviction
+当内存使用超过配置的时候会返回错误，不会驱逐任何键
+
+
+allkeys-lru
+加入键的时候，如果过限，首先通过LRU算法驱逐最久没有使用的键
+
+
+volatile-lru
+加入键的时候如果过限，首先从设置了过期时间的键集合中驱逐最久没有使用的键
+
+
+allkeys-lfu
+从所有键中驱逐使用频率最少的键
+
+
+volatile-lfu
+从所有配置了过期时间的键中驱逐使用频率最少的键
+
+
+allkeys-random
+加入键的时候如果过限，从所有key随机删除
+
+
+volatile-random
+加入键的时候如果过限，从过期键的集合中随机驱逐
+
+
+volatile-ttl
+从配置了过期时间的键中驱逐马上就要过期的键
+
+
+</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2021/04/17/memcache-redis/" title="Memcache和Redis比较">     <img class="post_bg" src="/../img/redis.jpeg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Memcache和Redis比较"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/04/17/memcache-redis/" title="Memcache和Redis比较">Memcache和Redis比较</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2021-04-17T03:52:28.000Z" title="发表于 2021-04-17 11:52:28">2021-04-17</time></span></div><div class="content">
+
+
+对比项
+Memcache
+Redis
+胜出
+
+
+
+数据结构
+k,v
+stringhashlistsetzset
+redis
+
+
+持久化
+不支持
+rdbaof
+redis
+
+
+高可用
+依赖客户端
+sentinel
+redis
+
+
+存储容量
+1M
+512M
+redis
+
+
+数据一致性
+支持事务
+CAS
+-
+
+
+内存分配
+预分配
+临时申请
+memcache
+
+
+性能
+优
+优
+memcache
+
+
+大数据量
+优
+中
+memcache
+
+
+</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2021/04/17/redis/" title="缓存和数据库数据一致性探讨">     <img class="post_bg" src="/../img/redis.jpeg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="缓存和数据库数据一致性探讨"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/04/17/redis/" title="缓存和数据库数据一致性探讨">缓存和数据库数据一致性探讨</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2021-04-17T02:14:28.000Z" title="发表于 2021-04-17 10:14:28">2021-04-17</time></span></div><div class="content">数据库和缓存的更新方式1.先更新数据库，再更新缓存2.先更新缓存，再更新数据库3.先更新数据库，再删除缓存4.先删除缓存，再更新数据库5.使用canal更新缓存
+一、先更新数据库，再更新缓存12db.update(key,val)cache.setex(key,ttl,val)
+
+1.如果数据库更新成功，缓存设置失败，结果数据库是新数据，缓存是旧数据，导致数据不一致
+2.高并发场景下，A线程更新数据库status=1成功后卡住，B线程更新数据库status=2，并更新缓存成功，然后A线程恢复，把缓存刷成status=1,此时数据库status=2和缓存status=1数据不一致结论：不推荐
+
+二、先更新缓存，再更新数据库12cache.setex(key,ttl,val)db.update(key,val)
+
+1.如果缓存更新成功，数据库设置失败，结果数据库是旧数据，缓存是新数据，导致数据不一致
+2.高并发场景下，A线程更新缓存status=1成功后卡住，B线程更新缓存status=2，并更新数据库成功，然后A线程恢复，把数据库刷成status=1,此时数据库status=1和缓存st ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2020/12/31/limitip/" title="限制IP访问频率">     <img class="post_bg" src="/../img/nginx.jpeg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="限制IP访问频率"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/12/31/limitip/" title="限制IP访问频率">限制IP访问频率</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-12-31T09:09:28.000Z" title="发表于 2020-12-31 17:09:28">2020-12-31</time></span></div><div class="content">安装OpenResty1234wget https://openresty.org/package/centos/openresty.reposudo mv openresty.repo /etc/yum.repos.d/sudo yum check-updatesudo yum install -y openresty
+
+编写LUA脚本1vi access_by_limit_ip.lua
+123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475767778798081828384858687888990919293949596979899100101102-- 可以实现自动将访问频次过高的IP地址加入黑名单封禁一段时间--连接池超时回收毫秒local pool_max_idle_time = 10000--连接池大小local pool_size = 100-- ...</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2020/12/29/https/" title="HTTPS原理">     <img class="post_bg" src="/../img/https.jpeg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="HTTPS原理"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/12/29/https/" title="HTTPS原理">HTTPS原理</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-12-29T08:54:28.000Z" title="发表于 2020-12-29 16:54:28">2020-12-29</time></span></div><div class="content">浏览器请求URL1域名 -&gt; DNS缓存 -&gt; DNS -&gt; IP -&gt; ARP -&gt; MAC -&gt; TCP -&gt; HTTP(S) -&gt; CDN -&gt; SLB -&gt; ECS -&gt; 浏览器渲染
+
+HTTP 1.0/1.1
+缓存处理
+带宽优化及网络连接的使用
+错误通知的管理
+HOST头处理
+长连接(Keep-alive)
+
+HTTP 1.1/2.0
+二进制分帧
+多路复用
+压缩首部
+服务端推送
+
+HTTP 2.0/3.0
+0-RTT
+多路复用
+更好的移动端表现
+加密认证的根文
+向前纠错机制
+
+HTTPDNS不走传统的DNS解析，而是自己搭建基于HTTP协议的DNS服务器集群，分布在多个地点和多个运营商，当客户端需要DNS解析的时候，直接通过HTTP协议进行请求这个服务器集群，获得就近的地址。
+相比于传统的DNS，HTTPDNS主要以下优势：
+
+域名防劫持使用HTTP（HTTPS）协议进行域名解析，域名解析请求直接发送至HTTPDNS服务器，绕过运营商Local DNS，避免域名劫持问题。
+
+调度精准由于运营商策略的多样性，其  ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2020/11/18/systemd/" title="编写Systemd服务脚本">     <img class="post_bg" src="/../img/linux.jpeg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="编写Systemd服务脚本"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/11/18/systemd/" title="编写Systemd服务脚本">编写Systemd服务脚本</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-11-18T08:54:28.000Z" title="发表于 2020-11-18 16:54:28">2020-11-18</time></span></div><div class="content">编写Systemd服务脚本Systemd的Service配置在/etc/systemd/system/目录中，格式说明如下：
+Unit区块12345678910Description：简单描述Documentation：服务的启动文件和配置文件Requires：当前Unit依赖的其他Unit，如果它们没有运行，当前Unit会启动失败Wants：与当前Unit配合的其他Unit，如果它们没有运行，不影响当前Unit的启动BindsTo：与Requires类似，它指定的Unit如果退出，会导致当前Unit停止运行Before：如果该字段指定的Unit也要启动，那么必须在当前Unit之后启动After：如果该字段指定的Unit也要启动，那么必须在当前Unit之前启动Conflicts：这里指定的Unit不能与当前Unit同时运行Condition...：当前Unit运行必须满足的条件，否则不会运行Assert...：当前Unit运行必须满足的条件，否则会报启动失败
+service区块1234567891011121314151617Type：定义启动时的进程行为，它有以下几种值。Type&# ...</div></div></div><nav id="pagination"><div class="pagination"><span class="page-number current">1</span></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="card-info-avatar is-center"><img class="avatar-img" src="http://git.boystar.cn/avatars/1?s=287" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/><div class="author-info__name">boystar</div><div class="author-info__description">一个程序员的博客</div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">10</div></a></div><div class="card-info-data-item is-center"><a href="/tags/"><div class="headline">标签</div><div class="length-num">7</div></a></div></div><a class="button--animated" id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/boystar1988"><i class="fab fa-github"></i><span>关注我</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/boystar1988" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:zb_zhao@msn.cn" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>公告</span></div><div class="announcement_content">一个程序员的博客</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2021/04/27/nginxlog/" title="分析Nginx日志脚本"><img src="/../img/nginx.jpeg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="分析Nginx日志脚本"/></a><div class="content"><a class="title" href="/2021/04/27/nginxlog/" title="分析Nginx日志脚本">分析Nginx日志脚本</a><time datetime="2021-04-27T03:27:00.000Z" title="发表于 2021-04-27 11:27:00">2021-04-27</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/04/17/cap/" title="CAP理论"><img src="/../img/algorithm.jpeg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="CAP理论"/></a><div class="content"><a class="title" href="/2021/04/17/cap/" title="CAP理论">CAP理论</a><time datetime="2021-04-17T14:41:28.000Z" title="发表于 2021-04-17 22:41:28">2021-04-17</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/04/17/render/" title="浏览器渲染过程"><img src="/../img/browser.jpeg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="浏览器渲染过程"/></a><div class="content"><a class="title" href="/2021/04/17/render/" title="浏览器渲染过程">浏览器渲染过程</a><time datetime="2021-04-17T06:50:28.000Z" title="发表于 2021-04-17 14:50:28">2021-04-17</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/04/17/algorithm/" title="常用算法"><img src="/../img/algorithm.jpeg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="常用算法"/></a><div class="content"><a class="title" href="/2021/04/17/algorithm/" title="常用算法">常用算法</a><time datetime="2021-04-17T04:08:28.000Z" title="发表于 2021-04-17 12:08:28">2021-04-17</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/04/17/redis-del/" title="Redis淘汰策略"><img src="/../img/redis.jpeg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Redis淘汰策略"/></a><div class="content"><a class="title" href="/2021/04/17/redis-del/" title="Redis淘汰策略">Redis淘汰策略</a><time datetime="2021-04-17T03:58:28.000Z" title="发表于 2021-04-17 11:58:28">2021-04-17</time></div></div></div></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/Cache/" style="font-size: 1.5em; color: #99a9bf">Cache</a> <a href="/tags/HTTP/" style="font-size: 1.1em; color: #999">HTTP</a> <a href="/tags/Linux/" style="font-size: 1.1em; color: #999">Linux</a> <a href="/tags/Nginx/" style="font-size: 1.3em; color: #99a1ac">Nginx</a> <a href="/tags/%E6%9E%B6%E6%9E%84/" style="font-size: 1.1em; color: #999">架构</a> <a href="/tags/%E7%AE%97%E6%B3%95/" style="font-size: 1.1em; color: #999">算法</a> <a href="/tags/%E7%BD%91%E7%BB%9C/" style="font-size: 1.1em; color: #999">网络</a></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>归档</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2021/04/"><span class="card-archive-list-date">四月 2021</span><span class="card-archive-list-count">7</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/12/"><span class="card-archive-list-date">十二月 2020</span><span class="card-archive-list-count">2</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/11/"><span class="card-archive-list-date">十一月 2020</span><span class="card-archive-list-count">1</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">10</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"></div></div><div class="webinfo-item"><div class="item-name">本站总访问量 :</div><div class="item-count" id="busuanzi_value_site_pv"></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2024-07-11T07:08:05.593Z"></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2024 By boystar</div><div class="footer_custom_text"><a target="_blank" rel="noopener" href="https://beian.miit.gov.cn"><span>粤ICP备16050608号</span></a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
